@@ -1,0 +1,22 @@
+{
+  "name": "belo-interviewer",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@tailwindcss/postcss": "^4.1.4",
+    "next": "^15.3.1",
+    "postcss": "^8.5.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.8.3",
+    "@types/react": "^19.1.0",
+    "@types/node": "^22.14.0"
+  }
+}
