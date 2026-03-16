@@ -6,10 +6,10 @@ export async function POST(req: NextRequest) {
   const timestamp = new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-");
   const filename = `belo-interview-${respondentId || "anon"}-${timestamp}.txt`;
 
-  let transcript = `BELO MEDICAL GROUP — CAMPAIGN RESEARCH INTERVIEW\n`;
+  let transcript = `FRAGRANCE RESEARCH — VALIDATION INTERVIEW\n`;
   transcript += `Respondent: ${respondentId || "Anonymous"}\n`;
   transcript += `Date: ${new Date().toLocaleDateString("en-PH", { weekday: "long", year: "numeric", month: "long", day: "numeric" })}\n`;
-  transcript += `Target: SEC AB 18–24, Metro Manila\n`;
+  transcript += `Topic: Luxury Fragrance Experience & Post-Purchase Innovation\n`;
   transcript += `${"=".repeat(60)}\n\n`;
 
   for (const msg of messages) {

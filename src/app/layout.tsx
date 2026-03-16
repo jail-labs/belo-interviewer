@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Belo Research Interview",
-  description: "Campaign research interview for Belo Medical Group",
+  title: "Fragrance Research Interview",
+  description: "Validation interview for luxury fragrance experience research",
 };
 
 export default function RootLayout({

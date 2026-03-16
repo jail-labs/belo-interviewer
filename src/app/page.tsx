@@ -228,7 +228,7 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 mb-6">
               <div className="w-2 h-2 rounded-full bg-[var(--color-belo-teal)]" />
               <span className="text-xs font-medium tracking-[0.2em] uppercase text-[var(--color-belo-teal)]">
-                Belo Medical Group
+                Fragrance Research
               </span>
               <div className="w-2 h-2 rounded-full bg-[var(--color-belo-teal)]" />
             </div>
@@ -236,13 +236,13 @@ export default function Home() {
               className="text-4xl md:text-5xl font-semibold mb-4 leading-tight"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              Campaign Research
+              Fragrance Research
               <br />
               <span className="text-[var(--color-belo-teal)]">Interview</span>
             </h1>
             <p className="text-[var(--color-belo-navy)]/60 text-sm leading-relaxed max-w-sm mx-auto">
-              A conversation about skincare, beauty, and what matters to you.
-              There are no right or wrong answers.
+              A conversation about fragrance — how you choose it, wear it, and
+              what makes it feel worth it. No right or wrong answers.
             </p>
           </div>
 
@@ -251,7 +251,7 @@ export default function Home() {
             {[
               {
                 icon: "🕐",
-                text: "Takes about 30 minutes",
+                text: "Takes about 10 minutes",
               },
               {
                 icon: "🔒",
@@ -403,10 +403,10 @@ export default function Home() {
         <div className="max-w-2xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-[var(--color-belo-teal)] flex items-center justify-center">
-              <span className="text-white text-xs font-semibold">B</span>
+              <span className="text-white text-xs font-semibold">F</span>
             </div>
             <div>
-              <p className="text-sm font-medium">Belo Research</p>
+              <p className="text-sm font-medium">Fragrance Research</p>
               <p className="text-xs text-[var(--color-belo-navy)]/40">
                 {isStreaming ? (
                   <span className="text-[var(--color-belo-teal)]">
