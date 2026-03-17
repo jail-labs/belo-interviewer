@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-belo-navy: #1B2A4A;
-  --color-belo-teal: #2A9D8F;
-  --color-belo-teal-light: #E0F2F1;
-  --color-belo-coral: #E07A5F;
-  --color-belo-cream: #FFF8F0;
-  --color-belo-sand: #F5F0EB;
+  --color-brand-navy: #1B2A4A;
+  --color-brand-teal: #2A9D8F;
+  --color-brand-teal-light: #E0F2F1;
+  --color-brand-coral: #E07A5F;
+  --color-brand-cream: #FFF8F0;
+  --color-brand-sand: #F5F0EB;
   --font-sans: 'DM Sans', system-ui, sans-serif;
   --font-display: 'Playfair Display', Georgia, serif;
 }
@@ -14,8 +14,8 @@
 @layer base {
   body {
     font-family: var(--font-sans);
-    background: var(--color-belo-cream);
-    color: var(--color-belo-navy);
+    background: var(--color-brand-cream);
+    color: var(--color-brand-navy);
   }
 }
 

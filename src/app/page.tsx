@@ -203,7 +203,7 @@ export default function Home() {
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = `belo-interview-${respondentId || "anon"}.txt`;
+      a.download = `fragrance-interview-${respondentId || "anon"}.txt`;
       a.click();
       URL.revokeObjectURL(url);
     } catch (e) {
@@ -226,11 +226,11 @@ export default function Home() {
           {/* Logo area */}
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 mb-6">
-              <div className="w-2 h-2 rounded-full bg-[var(--color-belo-teal)]" />
-              <span className="text-xs font-medium tracking-[0.2em] uppercase text-[var(--color-belo-teal)]">
+              <div className="w-2 h-2 rounded-full bg-[var(--color-brand-teal)]" />
+              <span className="text-xs font-medium tracking-[0.2em] uppercase text-[var(--color-brand-teal)]">
                 Fragrance Research
               </span>
-              <div className="w-2 h-2 rounded-full bg-[var(--color-belo-teal)]" />
+              <div className="w-2 h-2 rounded-full bg-[var(--color-brand-teal)]" />
             </div>
             <h1
               className="text-4xl md:text-5xl font-semibold mb-4 leading-tight"
@@ -238,9 +238,9 @@ export default function Home() {
             >
               Fragrance Research
               <br />
-              <span className="text-[var(--color-belo-teal)]">Interview</span>
+              <span className="text-[var(--color-brand-teal)]">Interview</span>
             </h1>
-            <p className="text-[var(--color-belo-navy)]/60 text-sm leading-relaxed max-w-sm mx-auto">
+            <p className="text-[var(--color-brand-navy)]/60 text-sm leading-relaxed max-w-sm mx-auto">
               A conversation about fragrance — how you choose it, wear it, and
               what makes it feel worth it. No right or wrong answers.
             </p>
@@ -264,10 +264,10 @@ export default function Home() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="flex items-center gap-4 bg-white/60 rounded-2xl px-5 py-4 border border-[var(--color-belo-navy)]/5"
+                className="flex items-center gap-4 bg-white/60 rounded-2xl px-5 py-4 border border-[var(--color-brand-navy)]/5"
               >
                 <span className="text-xl">{item.icon}</span>
-                <span className="text-sm text-[var(--color-belo-navy)]/70">
+                <span className="text-sm text-[var(--color-brand-navy)]/70">
                   {item.text}
                 </span>
               </div>
@@ -277,7 +277,7 @@ export default function Home() {
           <button
             onClick={() => setState("setup")}
             className="w-full py-4 rounded-2xl text-white font-medium text-sm tracking-wide transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]"
-            style={{ background: "var(--color-belo-teal)" }}
+            style={{ background: "var(--color-brand-teal)" }}
           >
             I&apos;m ready to start
           </button>
@@ -293,7 +293,7 @@ export default function Home() {
         <div className="max-w-lg w-full">
           <button
             onClick={() => setState("landing")}
-            className="mb-8 text-sm text-[var(--color-belo-navy)]/40 hover:text-[var(--color-belo-navy)]/70 transition-colors"
+            className="mb-8 text-sm text-[var(--color-brand-navy)]/40 hover:text-[var(--color-brand-navy)]/70 transition-colors"
           >
             ← Back
           </button>
@@ -304,13 +304,13 @@ export default function Home() {
           >
             Before we begin
           </h2>
-          <p className="text-sm text-[var(--color-belo-navy)]/60 mb-8">
+          <p className="text-sm text-[var(--color-brand-navy)]/60 mb-8">
             Just a couple of things to set up.
           </p>
 
           <div className="space-y-6">
             <div>
-              <label className="block text-xs font-medium uppercase tracking-wider text-[var(--color-belo-navy)]/50 mb-2">
+              <label className="block text-xs font-medium uppercase tracking-wider text-[var(--color-brand-navy)]/50 mb-2">
                 Your first name or nickname (optional)
               </label>
               <input
@@ -318,17 +318,17 @@ export default function Home() {
                 value={respondentId}
                 onChange={(e) => setRespondentId(e.target.value)}
                 placeholder="e.g., Mia"
-                className="w-full px-4 py-3 rounded-xl bg-white border border-[var(--color-belo-navy)]/10 text-sm focus:outline-none focus:border-[var(--color-belo-teal)] focus:ring-1 focus:ring-[var(--color-belo-teal)]/20 transition-all placeholder:text-[var(--color-belo-navy)]/25"
+                className="w-full px-4 py-3 rounded-xl bg-white border border-[var(--color-brand-navy)]/10 text-sm focus:outline-none focus:border-[var(--color-brand-teal)] focus:ring-1 focus:ring-[var(--color-brand-teal)]/20 transition-all placeholder:text-[var(--color-brand-navy)]/25"
               />
-              <p className="mt-1.5 text-xs text-[var(--color-belo-navy)]/40">
+              <p className="mt-1.5 text-xs text-[var(--color-brand-navy)]/40">
                 Just so the conversation feels more natural. This won&apos;t be
                 linked to your identity.
               </p>
             </div>
 
-            <div className="bg-white/60 rounded-2xl p-5 border border-[var(--color-belo-navy)]/5">
+            <div className="bg-white/60 rounded-2xl p-5 border border-[var(--color-brand-navy)]/5">
               <h3 className="text-sm font-semibold mb-2">Consent</h3>
-              <p className="text-xs text-[var(--color-belo-navy)]/60 leading-relaxed">
+              <p className="text-xs text-[var(--color-brand-navy)]/60 leading-relaxed">
                 By proceeding, you agree that your responses will be used
                 anonymously for marketing research purposes. Your answers will be
                 recorded as text. No personal identifying information will be
@@ -339,7 +339,7 @@ export default function Home() {
             <button
               onClick={startInterview}
               className="w-full py-4 rounded-2xl text-white font-medium text-sm tracking-wide transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]"
-              style={{ background: "var(--color-belo-teal)" }}
+              style={{ background: "var(--color-brand-teal)" }}
             >
               I agree — let&apos;s go
             </button>
@@ -361,10 +361,10 @@ export default function Home() {
           >
             Thank you!
           </h2>
-          <p className="text-sm text-[var(--color-belo-navy)]/60 mb-2">
+          <p className="text-sm text-[var(--color-brand-navy)]/60 mb-2">
             Interview duration: {formatTime(elapsed)}
           </p>
-          <p className="text-sm text-[var(--color-belo-navy)]/60 mb-8">
+          <p className="text-sm text-[var(--color-brand-navy)]/60 mb-8">
             {messages.length} messages exchanged
           </p>
 
@@ -372,7 +372,7 @@ export default function Home() {
             <button
               onClick={exportTranscript}
               className="w-full py-4 rounded-2xl text-white font-medium text-sm tracking-wide transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]"
-              style={{ background: "var(--color-belo-teal)" }}
+              style={{ background: "var(--color-brand-teal)" }}
             >
               Download Transcript
             </button>
@@ -385,7 +385,7 @@ export default function Home() {
                 setRespondentId("");
                 setState("landing");
               }}
-              className="w-full py-4 rounded-2xl font-medium text-sm tracking-wide border border-[var(--color-belo-navy)]/10 text-[var(--color-belo-navy)]/60 hover:bg-white/50 transition-all"
+              className="w-full py-4 rounded-2xl font-medium text-sm tracking-wide border border-[var(--color-brand-navy)]/10 text-[var(--color-brand-navy)]/60 hover:bg-white/50 transition-all"
             >
               Start New Interview
             </button>
@@ -397,19 +397,19 @@ export default function Home() {
 
   // Interview chat
   return (
-    <div className="h-screen flex flex-col bg-[var(--color-belo-cream)]">
+    <div className="h-screen flex flex-col bg-[var(--color-brand-cream)]">
       {/* Header */}
-      <header className="flex-shrink-0 border-b border-[var(--color-belo-navy)]/5 bg-white/70 backdrop-blur-md px-4 py-3">
+      <header className="flex-shrink-0 border-b border-[var(--color-brand-navy)]/5 bg-white/70 backdrop-blur-md px-4 py-3">
         <div className="max-w-2xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-[var(--color-belo-teal)] flex items-center justify-center">
+            <div className="w-8 h-8 rounded-full bg-[var(--color-brand-teal)] flex items-center justify-center">
               <span className="text-white text-xs font-semibold">F</span>
             </div>
             <div>
               <p className="text-sm font-medium">Fragrance Research</p>
-              <p className="text-xs text-[var(--color-belo-navy)]/40">
+              <p className="text-xs text-[var(--color-brand-navy)]/40">
                 {isStreaming ? (
-                  <span className="text-[var(--color-belo-teal)]">
+                  <span className="text-[var(--color-brand-teal)]">
                     typing...
                   </span>
                 ) : (
@@ -420,7 +420,7 @@ export default function Home() {
           </div>
           <button
             onClick={endInterview}
-            className="text-xs font-medium px-4 py-2 rounded-full border border-[var(--color-belo-coral)]/20 text-[var(--color-belo-coral)] hover:bg-[var(--color-belo-coral)]/5 transition-colors"
+            className="text-xs font-medium px-4 py-2 rounded-full border border-[var(--color-brand-coral)]/20 text-[var(--color-brand-coral)] hover:bg-[var(--color-brand-coral)]/5 transition-colors"
           >
             End Interview
           </button>
@@ -440,8 +440,8 @@ export default function Home() {
               <div
                 className={`max-w-[85%] md:max-w-[75%] rounded-2xl px-4 py-3 text-sm leading-relaxed ${
                   msg.role === "user"
-                    ? "bg-[var(--color-belo-navy)] text-white rounded-br-md"
-                    : "bg-white text-[var(--color-belo-navy)] border border-[var(--color-belo-navy)]/5 rounded-bl-md shadow-sm"
+                    ? "bg-[var(--color-brand-navy)] text-white rounded-br-md"
+                    : "bg-white text-[var(--color-brand-navy)] border border-[var(--color-brand-navy)]/5 rounded-bl-md shadow-sm"
                 }`}
               >
                 <p className="whitespace-pre-wrap">{msg.content}</p>
@@ -452,7 +452,7 @@ export default function Home() {
           {/* Streaming message */}
           {isStreaming && streamingText && (
             <div className="flex justify-start msg-enter">
-              <div className="max-w-[85%] md:max-w-[75%] rounded-2xl rounded-bl-md px-4 py-3 bg-white text-[var(--color-belo-navy)] border border-[var(--color-belo-navy)]/5 shadow-sm text-sm leading-relaxed">
+              <div className="max-w-[85%] md:max-w-[75%] rounded-2xl rounded-bl-md px-4 py-3 bg-white text-[var(--color-brand-navy)] border border-[var(--color-brand-navy)]/5 shadow-sm text-sm leading-relaxed">
                 <p className="whitespace-pre-wrap">{streamingText}</p>
               </div>
             </div>
@@ -461,11 +461,11 @@ export default function Home() {
           {/* Typing indicator */}
           {isStreaming && !streamingText && (
             <div className="flex justify-start msg-enter">
-              <div className="rounded-2xl rounded-bl-md px-5 py-4 bg-white border border-[var(--color-belo-navy)]/5 shadow-sm">
+              <div className="rounded-2xl rounded-bl-md px-5 py-4 bg-white border border-[var(--color-brand-navy)]/5 shadow-sm">
                 <div className="flex gap-1.5">
-                  <div className="typing-dot w-2 h-2 rounded-full bg-[var(--color-belo-teal)]" />
-                  <div className="typing-dot w-2 h-2 rounded-full bg-[var(--color-belo-teal)]" />
-                  <div className="typing-dot w-2 h-2 rounded-full bg-[var(--color-belo-teal)]" />
+                  <div className="typing-dot w-2 h-2 rounded-full bg-[var(--color-brand-teal)]" />
+                  <div className="typing-dot w-2 h-2 rounded-full bg-[var(--color-brand-teal)]" />
+                  <div className="typing-dot w-2 h-2 rounded-full bg-[var(--color-brand-teal)]" />
                 </div>
               </div>
             </div>
@@ -476,7 +476,7 @@ export default function Home() {
       </div>
 
       {/* Input */}
-      <div className="flex-shrink-0 border-t border-[var(--color-belo-navy)]/5 bg-white/70 backdrop-blur-md px-4 py-3">
+      <div className="flex-shrink-0 border-t border-[var(--color-brand-navy)]/5 bg-white/70 backdrop-blur-md px-4 py-3">
         <div className="max-w-2xl mx-auto">
           <div className="flex items-end gap-2">
             <div className="flex-1 relative">
@@ -492,7 +492,7 @@ export default function Home() {
                 onKeyDown={handleKeyDown}
                 placeholder="Type your answer..."
                 rows={1}
-                className="w-full resize-none rounded-2xl border border-[var(--color-belo-navy)]/10 bg-[var(--color-belo-cream)] px-4 py-3 text-sm focus:outline-none focus:border-[var(--color-belo-teal)] focus:ring-1 focus:ring-[var(--color-belo-teal)]/20 transition-all placeholder:text-[var(--color-belo-navy)]/25"
+                className="w-full resize-none rounded-2xl border border-[var(--color-brand-navy)]/10 bg-[var(--color-brand-cream)] px-4 py-3 text-sm focus:outline-none focus:border-[var(--color-brand-teal)] focus:ring-1 focus:ring-[var(--color-brand-teal)]/20 transition-all placeholder:text-[var(--color-brand-navy)]/25"
                 disabled={isStreaming}
               />
             </div>
@@ -503,8 +503,8 @@ export default function Home() {
               style={{
                 background:
                   input.trim() && !isStreaming
-                    ? "var(--color-belo-teal)"
-                    : "var(--color-belo-navy)",
+                    ? "var(--color-brand-teal)"
+                    : "var(--color-brand-navy)",
               }}
             >
               <svg
@@ -522,7 +522,7 @@ export default function Home() {
               </svg>
             </button>
           </div>
-          <p className="text-center text-[10px] text-[var(--color-belo-navy)]/25 mt-2">
+          <p className="text-center text-[10px] text-[var(--color-brand-navy)]/25 mt-2">
             Press Enter to send · Shift+Enter for new line
           </p>
         </div>

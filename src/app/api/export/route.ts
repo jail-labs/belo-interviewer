@@ -4,7 +4,7 @@ export async function POST(req: NextRequest) {
   const { messages, respondentId } = await req.json();
 
   const timestamp = new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-");
-  const filename = `belo-interview-${respondentId || "anon"}-${timestamp}.txt`;
+  const filename = `fragrance-interview-${respondentId || "anon"}-${timestamp}.txt`;
 
   let transcript = `FRAGRANCE RESEARCH — VALIDATION INTERVIEW\n`;
   transcript += `Respondent: ${respondentId || "Anonymous"}\n`;
